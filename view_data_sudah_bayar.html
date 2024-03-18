@@ -1,0 +1,318 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Gembok | Data Tilang</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <!-- <img src="assets/images/logo-svg.svg" alt=""> -->
+          <span style="color: #000000;"><b>Gembok.</b></span>
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          
+          <ul class="nav text-center" style="background-color: #f1f1f1; border-radius: 20px;">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-grid fe-12"></span><span class="ml-lg-2 text-black">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="user_admin.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-user fe-12"></span><span class="ml-lg-2">User Management</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-file-text fe-12"></span><span class="ml-lg-2">Data Tilang</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-settings fe-12"></span><span class="ml-lg-2">Pengaturan</span>
+              </a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-klik dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="avatar avatar-sm mt-2 name-tag">
+                <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="profile.html"><span class="iconify" data-icon="ph:user-circle-fill"
+                  data-width="16"></span><span class="" style="margin-left: 10%;"></span>Profile</a>
+              <a class="dropdown-item" href="./login.html"><span class="iconify" data-icon="mdi:logout" data-width="16"></span><span
+                  class="" style="margin-left: 10%;"></span>Logout</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <a href="./data_tilang.html"><h2 class="h2 page-title" style="color: #000000;"><span class="fe fe-arrow-left";></span></h2></a>
+            <h2 class="h1 page-title" style="color: #000000;">Detail Informasi Tilang</h2>
+          </div>
+          <div class="col-md-auto">
+            <span class="page-title" style="color: #000000;"><b>No. Plat Kendaraan</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>H 6869 TF</b></h2>
+          </div>
+        </div>
+
+        <!-- Konten detail -->
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-md-12">
+            <div class="mb-2">
+              <div class="card">
+                <div class="card-body p-2">
+                  <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4 mb-4">
+                      <div class="row align-items-center" style="margin-left: 5px;">
+                        <img src="./assets/avatars/face-1.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px;">
+                        <div class="col">
+                          <span class="page-title" style="color: #000000;"><b>Nama Petugas</b></span>
+                          <h6 style="color: #7B7B7B;">08957865436</h6>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="card-body" style="border-radius: 30px; background-color: #7b7b7b13;">
+                        <div class="row align-items-center">
+                          <div class="col pr-0">
+                            <span class="h6 mb-0">Lokasi Pelanggaran</span>
+                            <h6 style="color: #7B7B7B;">Jl. Gatot Subroto, 192 D-F, Kratonan, Serengan, Kota Surakarta</h6>
+                          </div>
+                        </div>
+                        <!-- card 2 -->
+                        <a href="https://www.google.com/maps/place/Fun+Teknologi/@-6.9701488,110.4179002,17z/data=!3m1!4b1!4m6!3m5!1s0x2e70f5bd34b96069:0x93a2e66161c788bc!8m2!3d-6.9701541!4d110.4204751!16s%2Fg%2F11qqylmd6c?entry=ttu">
+                        <div class="card-body" style="border-radius: 20px; background-color: #7b7b7b13;">
+                          <div class="row align-items-center">
+                            <div class="col-6">
+                              <span class="h6 mb-0 fe fe-map"> Lihat di maps</span>
+                            </div>
+                            <div class="col-6">
+                              <span class="h3 mb-0 fe fe-arrow-up-right float-right"></span>                                                          
+                            </div>
+                          </div>                          
+                        </div>
+                        </a>
+                        <!-- End Card 2 -->
+                      </div>
+                      <br>
+                      <!-- card Kendaraan -->
+                      <div class="card-body" style="border-radius: 20px; background-image: url(./assets/images/inopa.jpg); height: 241px;">
+                      </div>
+                      <!-- End Card Kendaraan-->
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                      <span class="page-title" style="color: #000000;"><b>Tanggal & Waktu</b></span>
+                      <h6 style="color: #7B7B7B;">2020-05-02 07:10:15</h6>
+                      <span class="page-title" style="color: #000000;"><b>Tarif Denda</b></span>
+                      <h6 style="color: #7B7B7B;">Rp. 500.000</h6>
+                      <span class="page-title" style="color: #000000;"><b>Jenis Kendaraan</b></span>
+                      <h6 style="color: #7B7B7B;">Mobil</h6>
+                      <span class="page-title" style="color: #000000;"><b>Jenis Tilang</b></span>
+                      <h6 style="color: #7B7B7B;">Derek</h6>
+                      <span class="page-title" style="color: #000000;"><b>Detail Pelanggaran</b></span>
+                      <h6 style="color: #7B7B7B;">T-shaped unpack responsible seat deck charts. Email strategies beef eye stakeholder after office cc cta developing. Box commitment keywords post underlying t-shaped discussion. Break cob developing breakout well keywords better reach.
+                      </h6>                      
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                      <div class="card-body" style="border-radius: 30px; background-color: #57A468;">
+                        <div class="row align-items-center">
+                          <div class="col pr-0">
+                            <p class="text-white">Status Pembayaran</p>
+                            <div class="row align-items-center">
+                              <div class="col-8">
+                                <p class="text-white"><b class="h3 text-white">Sudah Dibayar</b> QRIS</p>
+                              </div>
+                              <div class="col-4 text-right">
+                                <!-- <span class="h3 mb-0 fe fe-arrow-up-right float-right text-white"></span>    -->
+                                <img src="./assets/images/sukses.png" style="height: 60px; width: 60px; margin-right: 20px; margin-bottom: 20px;">                                                       
+                              </div>
+                            </div>
+                            <a href="modal" data-toggle="modal" data-target="#buktipembayaran"><p class="text-white">Lihat Bukti Pembayaran 
+                              <span class="fe fe-arrow-up-right"></span></p></a>
+                              <!-- Modal Bukti Pembayaran -->
+                              <div class="modal fade" id="buktipembayaran" tabindex="-1" role="dialog"
+                              aria-labelledby="verticalModalTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered modal-md" role="document"
+                                      style="border-radius: 50%;">
+                                      <div class="modal-content" style="border-radius: 16px; border: none;">
+                                        <div class="modal-body text-center">
+                                          <img class="text-center col-12" src="./assets/images/bukti1.png">  
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- End Modal Bukti Pembayaran -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" style="border-radius: 30px; margin-top: 10px; background-color: #f0f0f0">
+                        <p class="h3 text-center" style="margin-top: 10px;">Pembayaran Dikonfirmasi <span class="fe fe-check"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Konten Detail -->
+
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+  <script>
+    // Script untuk menghapus pilihan saat tombol "X" ditekan
+    document.querySelector('.clear-button').addEventListener('click', function () {
+      const selectElement = document.querySelector('.input-select');
+      selectElement.value = '';
+    });
+
+    // Script untuk menampilkan/menghilangkan tombol "X" berdasarkan pilihan yang dipilih
+    const selectElement = document.querySelector('.input-select');
+    selectElement.addEventListener('change', function () {
+      const clearButton = document.querySelector('.clear-button');
+      clearButton.style.display = this.value !== '' ? 'block' : 'none';
+    });
+  </script>
+</body>
+
+</html>

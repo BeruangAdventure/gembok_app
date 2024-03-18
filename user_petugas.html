@@ -1,0 +1,503 @@
+`
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="favicon.ico">
+  <title>Gembok | User Petugas</title>
+  <!-- Simple bar CSS -->
+  <link rel="stylesheet" href="css/simplebar.css">
+
+  <!-- Fonts CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons CSS -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/feather.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/uppy.min.css">
+  <link rel="stylesheet" href="css/jquery.steps.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/app-light.css" id="lightTheme">
+  <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="horizontal light">
+  <div class="wrapper ">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <button type="button" class="navbar-toggler text-muted mt-2 p-0 mr-3 collapseSidebar">
+          <!-- <img src="assets/images/logo-svg.svg" alt=""> -->
+          <span style="color: #000000;"><b>Gembok.</b></span>
+        </button>
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu">
+          
+          <ul class="nav text-center" style="background-color: #f1f1f1; border-radius: 20px;">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-grid fe-12"></span><span class="ml-lg-2 text-black">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="user_admin.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-user fe-12"></span><span class="ml-lg-2">User Management</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="data_tilang.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-file-text fe-12"></span><span class="ml-lg-2">Data Tilang</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengaturan.html" class="nav-link" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fe fe-settings fe-12"></span><span class="ml-lg-2">Pengaturan</span>
+              </a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none fe fe-menu"></i>
+        </nav><!-- End Nav Menu -->
+
+        <ul class="nav">
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-klik dropdown-toggle my-2 text-muted" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="fe fe-bell fe-16"></span>
+              <span class="dot dot-md bg-success"></span>
+            </a>
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="alertsDropdown">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 7, 2019</div>
+                  $290.29 has been deposited into your account!
+                </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <span class="fe fe-bell fe-16"></span>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 2, 2019</div>
+                  Spending Alert: We've noticed unusually high spending for your account.
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-klik dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="avatar avatar-sm mt-2 name-tag">
+                <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle ">
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="profile.html"><span class="iconify" data-icon="ph:user-circle-fill"
+                  data-width="16"></span><span class="" style="margin-left: 10%;"></span>Profile</a>
+              <a class="dropdown-item" href="./login.html"><span class="iconify" data-icon="mdi:logout" data-width="16"></span><span
+                  class="" style="margin-left: 10%;"></span>Logout</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <main role="main" class="main-content" style="margin-top: 70px;">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col">
+            <h2 class="h1 page-title" style="color: #000000;">User</h2>
+            <h2 class="h1 page-title" style="color: #000000;">Management</h2>
+          </div>
+          <div class="col-md-auto">
+            <span class="page-title" style="color: #000000;"><b>Jumlah User Admin</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>56 <span class="fe fe-user fe-12"></span></b></h2>
+          </div>
+          <div class="col col-lg-2">
+            <span class="page-title" style="color: #000000;"><b>Jumlah User Petugas</b></span>
+            <h2 class="h1 page-title" style="color: #000000; font-weight: normal;"><b>268 <span class="fe fe-user fe-12"></span></b></h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-bottom: 20px;">
+          <div class="col my-2">
+            <a href="user_admin.html"><button type="button" class="btn btn-sm btn-off text-secondary" style="border-radius: 15px; width: 90;">Admin</button>
+            </a>
+            <a href="user_petugas.html"><button type="button" class="btn btn-sm btn-on text-white" style="border-radius: 15px; width: 90;">Petugas</button>
+            </a>
+          </div>
+          <div class="col-md-auto">
+            <button type="button" class="btn btn-sm btn-buat-user " style="border-radius: 15px; width: 140;" data-toggle="modal" data-target=".modal-tambahpetugas">
+              <b> <span class="fe fe-user-plus fe-12"></span> Buat User Petugas</b></button>
+              <!-- Slide Modal Tambah User Petugas -->
+              <div class="modal fade modal-tambahpetugas modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px; height: 100%;" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <h5 class="modal-title" id="defaultModalLabel" style="color: #000000; margin-bottom: 30px; margin-left: 15px;"><a href="user_petugas.html"><span class="fe fe-arrow-left" style="color: #000000;"></span></a> Buat Akun Petugas Baru</h5>
+                        <div class="col-12">
+                          <span>Informasi Persoanal</span>
+                          <hr>
+                        </div>
+                        <div class="col-12">
+                          <form>
+                            <div class="form-group row">
+                              <label for="inputnama" class="col-sm-3 col-form-label" style="color: #000000;">* Nama Lengkap</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputnama" placeholder="Nama Lengkap User Petugas" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputemail" class="col-sm-3 col-form-label" style="color: #000000;">* Email Address</label>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputemail" placeholder="email.example@gmail.com" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputnomerwa" class="col-sm-3 col-form-label" style="color: #000000;">* No Whatsapp</label>
+                              <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="inputnomerwa" placeholder="08xxxxxxxxxx" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputalamat" class="col-sm-3 col-form-label" style="color: #000000;">* Alamat</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputalamat" placeholder="Alamat Rumah" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-12" style="margin-top: 5px;">
+                          <span>Akun</span>
+                          <hr>
+                        </div>
+                        <div class="col-12">
+                          <form>
+                            <div class="form-group row">
+                              <label for="inputusername" class="col-sm-3 col-form-label" style="color: #000000;">* Username</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputusername" placeholder="Username digunakan untuk login" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputpassword" class="col-sm-3 col-form-label" style="color: #000000;">* Password</label>
+                              <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputpassword" placeholder="kata sandi minimal 8 karakter terdiri dari kombinasi huruf angka dan simbol" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputulangpassword" class="col-sm-3 col-form-label" style="color: #000000;">* Retype Password</label>
+                              <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukan Ulang kata sandi" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-12 text-right">
+                          <button type="reset" class="btn btn-off" style="border-radius: 20px;">Batal</button>
+                          <button type="submit" class="btn btn-on text-white" style="border-radius: 20px;">Simpan</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+              <!--End modal tambah User Petugas -->
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col">
+              <label for="search" class="sr-only">Search</label>
+              <input type="text" class="form-control" id="search" value="" placeholder="Pencarian" style="border-radius: 20px;">
+            </div>
+            <div class="col-md-auto">
+              <span class="page-title" style="color: #7B7B7B;">Status Account<br>Semua </span>
+              <span class="fe fe-12 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="./edit_management_kota.html"><span class="fe fe-edit"></span> View Detail</a>
+                <a class="dropdown-item" href="#"><span class="fe fe-trash-2"></span> Hapus</a>
+              </div>
+            </div>
+            <div class="col-md-auto">
+                <span class="page-title" style="color: #7B7B7B;">Urutkan Berdasarkan<br> Tanggal Perbuatan-terbaru</span>
+                <span class="fe fe-12 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="./edit_management_kota.html"><span class="fe fe-edit"></span> View Detail</a>
+                  <a class="dropdown-item" href="#"><span class="fe fe-trash-2"></span> Hapus</a>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <button type="button" class="btn btn-sm text-white" style="border-radius: 10px; background-color: #000000;">Terapkan Filter</button>
+                <button class="btn" type="button"><span class="fe fe-share"></span></button>
+            </div>
+        </div>
+
+        <div class="row mt-3" style="border-radius: 12px;">
+          <div class="col-md-12">
+            <div class="card" style="height: 600px;">
+              <div class="card-body">
+                <!-- table start -->
+              <div class="table-responsive">
+                <table class="table datatables" id="dataTable-1">
+                  <thead>
+                    <tr>
+                      <th>UserID</th>
+                      <th>Tanggal Dibuat</th>
+                      <th>Nama Lengkap</th>
+                      <th>Username</th>
+                      <th>Email</th>
+                      <th>No Whatsapp</th>
+                      <th>Alamat</th>
+                      <th>status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>User ID</td>
+                      <td>Tanggal Dibuat</td>
+                      <td>Satrio Adib</td>
+                      <td>trio</td>
+                      <td>satrio@gmail.com</td>
+                      <td>089510765236</td>
+                      <td>Jalan Erlangga 12</td>
+                      <td><span class="badge badge-aktif"
+                        style="border-radius: 6px; width:90px;">Aktif</span>
+                      </td>
+                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="text-muted sr-only">Action</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" data-toggle="modal" data-target=".modal-ubahpetugas"><span class="fe fe-edit"></span> Ubah</button>
+                          <button class="dropdown-item" data-toggle="modal" data-target="#hapuspetugas"><span class="fe fe-trash-2"></span> Hapus</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>User ID</td>
+                      <td>Tanggal Dibuat</td>
+                      <td>Satrio Adib</td>
+                      <td>trio</td>
+                      <td>satrio@gmail.com</td>
+                      <td>089510765236</td>
+                      <td>Jalan Erlangga 12</td>
+                      <td><span class="badge badge-tidak-aktif"
+                        style="border-radius: 6px; width:90px;">Tidak Aktif</span>
+                      </td>
+                      <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="text-muted sr-only">Action</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" data-toggle="modal" data-target=".modal-ubahpetugas"><span class="fe fe-edit"></span> Ubah</button>
+                          <button class="dropdown-item" data-toggle="modal" data-target="#hapuspetugas"><span class="fe fe-trash-2"></span> Hapus</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <!-- table end -->
+              <!-- Modal Ubah User Petugas -->
+              <div class="modal fade modal-ubahpetugas modal-slide" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px; height: 100%;" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <h5 class="modal-title" id="defaultModalLabel" style="color: #000000; margin-bottom: 30px; margin-left: 15px;"><a href="user_petugas.html"><span class="fe fe-arrow-left" style="color: #000000;"></span></a> Ubah Data & Informasi User Petugas</h5>
+                        <div class="col-12">
+                          <span>Informasi Persoanal</span>
+                          <hr>
+                        </div>
+                        <div class="col-12">
+                          <form>
+                            <div class="form-group row">
+                              <label for="inputnama" class="col-sm-3 col-form-label" style="color: #000000;">* Nama Lengkap</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputnama" placeholder="Nama Lengkap User Petugas" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputemail" class="col-sm-3 col-form-label" style="color: #000000;">* Email Address</label>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputemail" placeholder="email.example@gmail.com" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputnomerwa" class="col-sm-3 col-form-label" style="color: #000000;">* No Whatsapp</label>
+                              <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="inputnomerwa" placeholder="08xxxxxxxxxx" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputalamat" class="col-sm-3 col-form-label" style="color: #000000;">* Alamat</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputalamat" placeholder="Alamat Rumah" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-12" style="margin-top: 5px;">
+                          <span>Akun</span>
+                          <hr>
+                        </div>
+                        <div class="col-12">
+                          <form>
+                            <div class="form-group row">
+                              <label for="inputusername" class="col-sm-3 col-form-label" style="color: #000000;">* Username</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputusername" placeholder="Username digunakan untuk login" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputpassword" class="col-sm-3 col-form-label" style="color: #000000;">* Password</label>
+                              <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputpassword" placeholder="kata sandi minimal 8 karakter terdiri dari kombinasi huruf angka dan simbol" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputulangpassword" class="col-sm-3 col-form-label" style="color: #000000;">* Retype Password</label>
+                              <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputulangpassword" placeholder="Masukan Ulang kata sandi" style="border-color: transparent; background-color: #eeeeee; border-radius: 8px;" required>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-12 text-right">
+                          <button type="reset" class="btn btn-off" style="border-radius: 20px;">Batal</button>
+                          <button type="submit" class="btn btn-on text-white" style="border-radius: 20px;">Simpan Perubahan</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+              <!-- End Modal Ubah User Petugas -->
+              <!-- Modal Hapus User Petugas -->
+              <div class="modal fade" id="hapuspetugas" tabindex="-1" role="dialog"
+              aria-labelledby="verticalModalTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-sm" role="document"
+                      style="border-radius: 50%;">
+                      <div class="modal-content" style="border-radius: 16px; border: none;">
+                        <div class="modal-body text-center">
+                            <h5 style="color: #E42915;">Yakin ingin menghapus?</h5>
+                            <span class="strong">Data akan dihapus selamanya</span>
+                            <div class="text-center mt-3">
+                                <button type="button" class="btn mb-2 btn-off "
+                                    data-dismiss="modal"
+                                    style="border-radius: 16px;">Batal</button>
+                                <button type="button" class="btn mb-2 btn-on text-white"
+                                    style="border-radius: 16px;"
+                                    data-bs-target="#hapusModal2" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Hapus</button>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- End Modal Hapus User Petugas -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- .container-fluid -->
+    </main> <!-- main -->
+  </div> <!-- .wrapper -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src='js/daterangepicker.js'></script>
+  <script src='js/jquery.stickOnScroll.js'></script>
+  <script src="js/tinycolor-min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.min.js"></script>
+  <script src="js/datamaps.all.min.js"></script>
+  <script src="js/datamaps-zoomto.js"></script>
+  <script src="js/datamaps.custom.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/gauge.min.js"></script>
+  <script src='js/jquery.dataTables.min.js'></script>
+  <script src='js/dataTables.bootstrap4.min.js'></script>
+  <script>
+    $('#dataTable-1').DataTable(
+      {
+        autoWidth: true,
+        "lengthMenu": [
+          [16, 32, 64, -1],
+          [16, 32, 64, "All"]
+        ]
+      });
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-56159088-1');
+  </script>
+  <script src="js/apps.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+  <!-- costum slect -->
+  <script>
+    // Script untuk menghapus pilihan saat tombol "X" ditekan
+    document.querySelector('.clear-button').addEventListener('click', function () {
+      const selectElement = document.querySelector('.input-select');
+      selectElement.value = '';
+    });
+
+    // Script untuk menampilkan/menghilangkan tombol "X" berdasarkan pilihan yang dipilih
+    const selectElement = document.querySelector('.input-select');
+    selectElement.addEventListener('change', function () {
+      const clearButton = document.querySelector('.clear-button');
+      clearButton.style.display = this.value !== '' ? 'block' : 'none';
+    });
+  </script>
+</body>
+
+</html>
